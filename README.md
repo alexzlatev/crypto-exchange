@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Crypto Exchange App #
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Our goal is to create a simple web app that provides quick access to the current market prices of selected cryptocurrency pairs.
 
-## Available Scripts
+Targeted Exchanges with open APIs:
+### Binance - https://www.binance.com/en
+### Huobi - https://www.huobi.com/en-us/
 
-In the project directory, you can run:
+The initial screen should consist of search functionality where the user can type the cryptocurrency pair of interest, for example - `BTC/USD`, `BTC/USDT`, `ETH/USD`, etc.
 
-### `yarn start`
+The application should crawl the data from all the exchanges listed above and visualise the current market price for each of them, e.g. Binance: 1 BTC = $40,000 USDT.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application should consider the case the pair is not supported on selected exchange and communicate it properly in the interface.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The user should be able to:
+* Search for a particular cryptocurrency exchange pair.
+* Get the results and being able to sort them by price.
+* Initiate the search functionality by opening the application through url containing the pair string: `http://url.com/{cryptocurrency_pair}/`
 
-### `yarn test`
+UX, styling and attention to detail is up to you.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Bonus**:
+While staying on the results page, update the market prices automatically in a reasonable time intervals.
 
-### `yarn build`
+### What can be used:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* ReactJS
+* Any other library considered necessary
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please upload your complete source code to a GitHub repo.
 
-### `yarn eject`
+### How we will test your code:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. `git clone`
+2. `yarn && yarn start`
